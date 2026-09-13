@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 1.6 Skins Hub | مكتبة سكنات كاونتر سترايك</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1215;
+            --card-bg: #181c22;
+            --accent-color: #f39c12;
+            --text-color: #e1e6ed;
+            --text-secondary: #8c96a5;
+            --btn-green: #27ae60;
+            --btn-hover: #2ecc71;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding-bottom: 50px;
+        }
+
+        /* الهيدر والعنوان */
+        header {
+            background: linear-gradient(180deg, #1f252d 0%, var(--bg-color) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* الحاوية الرئيسية */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* أدوات التصفية والبحث */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px 10px 40px;
+            background: #0f1215;
+            border: 1px solid #2c3540;
+            border-radius: 5px;
+            color: #fff;
+            outline: none;
+        }
+
+        /* شبكة عرض السكنات */
+        .skins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* بطاقة السكن */
+        .skin-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #262c36;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skin-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            border-color: var(--accent-color);
+        }
+
+        .skin-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            background: #0b0d0f;
+        }
+
+        .skin-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .skin-info {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .skin-title {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .skin-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .skin-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .btn-download {
+            background-color: var(--btn-green);
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-download:hover {
+            background-color: var(--btn-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fa-solid =>-crosshairs"></i> CS 1.6 SKINS HUB</h1>
+        <p>المكتبة الاحترافية لتحميل سكنات Counter-Strike 1.6 عالية الدقة</p>
+    </header>
+
+    <div class="container">
+        <!-- شبكة السكنات -->
+        <div class="skins-grid">
+
+            <!-- سكن 1 -->
+            <div class="skin-card">
+                <div class="img-container">
+                    <span class="skin-badge">AK-47</span>
+                    <img src="https://via.placeholder.com/400x250/1f252d/f39c12?text=AK47+Asimov" alt="AK-47 Asimov">
+                </div>
+                <div class="skin-info">
+                    <h3 class="skin-title">AK-47 Asimov</h3>
+                    <p class="skin-desc">سكن عالي الدقة HD بتصميم مستقبلي وقوانين انميشن من قفازات HD.</p>
+                    <a href="ضع_رابط_التحميل_هنا" class="btn-download" target="_blank">
+                        <i class="fa-solid fa-download"></i> تحميل السكن
+                    </a>
+                </div>
+            </div>
+
+            <!-- سكن 2 -->
+            <div class="skin-card">
+                <div class="img-container">
+                    <span class="skin-badge">AWP</span>
+                    <img src="https://via.placeholder.com/400x250/1f252d/f39c12?text=AWP+Dragon+Lore" alt="AWP Dragon Lore">
+                </div>
+                <div class="skin-info">
+                    <h3 class="skin-title">AWP Dragon Lore</h3>
+                    <p class="skin-desc">سكن التنين المطور لـ CS 1.6 مع صوت إطلاق نار معدل أصلي.</p>
+                    <a href="ضع_رابط_التحميل_هنا" class="btn-download" target="_blank">
+                        <i class="fa-solid fa-download"></i> تحميل السكن
+                    </a>
+                </div>
+            </div>
+
+            <!-- سكن 3 -->
+            <div class="skin-card">
+                <div class="img-container">
+                    <span class="skin-badge">Knife</span>
+                    <img src="https://via.placeholder.com/400x250/1f252d/f39c12?text=Karambit+Fade" alt="Karambit Fade">
+                </div>
+                <div class="skin-info">
+                    <h3 class="skin-title">Karambit Fade</h3>
+                    <p class="skin-desc">سكين كرامبيت بتأثير ألوان التدرج الممتاز وأنيميشن سحب سريع.</p>
+                    <a href="ضع_رابط_التحميل_هنا" class="btn-download" target="_blank">
+                        <i class="fa-solid fa-download"></i> تحميل السكن
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
